@@ -1,5 +1,23 @@
-<nav>
-  <button class="bg-primary " routerLink='/peliculas'>Mostrar películas</button>
-  <button class="bg-primary " routerLink='/series'>Mostrar series</button>
-</nav>
-<router-outlet></router-outlet>
+<div class="container-fluid">
+  <h1>Lista de películas y series</h1>
+  <div class="row">
+    <!-- Botón Mostrar Películas -->
+    <div class="col-12 col-md-6 d-flex justify-content-center mb-3">
+      <button class="bg-primary btn btn-primary" routerLink="/peliculas">
+        Mostrar películas
+      </button>
+    </div>
+    
+    <!-- Botón Mostrar Series -->
+    <div class="col-12 col-md-6 d-flex justify-content-center mb-3">
+      <button class="bg-primary btn btn-primary" routerLink="/series">
+        Mostrar series
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Aquí se muestran los componentes según la ruta -->
+<div>
+  <router-outlet></router-outlet>
+</div>

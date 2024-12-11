@@ -6,5 +6,4 @@ import { SeriesComponent } from './series/series.component';
 export const routes: Routes = [
     {path:'peliculas',component:PeliculasComponent},
     {path:'series',component:SeriesComponent},
-
 ];

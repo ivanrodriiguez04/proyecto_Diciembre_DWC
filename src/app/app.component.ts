@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { PeliculasComponent } from "./peliculas/peliculas.component";
-import { SeriesComponent } from "./series/series.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PeliculasComponent, SeriesComponent],
+  standalone: true,
+  imports: [RouterModule], // Importa el módulo de rutas para usar routerLink y router-outlet
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  title = 'proyecto_Diciembre';
-}
+export class AppComponent {}
