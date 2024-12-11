@@ -1,1 +1,12 @@
-<p>series works!</p>
+<h1>Series Populares</h1>
+<div *ngIf="series.length > 0; else noData">
+  <app-detalle-serie
+    *ngFor="let serie of series"
+    [serie]="serie"
+  ></app-detalle-serie>
+</div>
+
+<ng-template #noData>
+  <p>No hay datos disponibles.</p>
+</ng-template>
+
